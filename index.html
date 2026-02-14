@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithila | Machh & Makhan Udyog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Mithila-Machh<span class="highlight"> & Makhan Udyog</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#products">Harvest</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content hidden">
+            <h1>Sustainable <span class="text-blue">Fish</span> & <span class="text-green">Makhana</span> Farming</h1>
+            <p>Providing high-quality aquatic produce from our large-scale natural ponds to your market.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary">Our Produce</a>
+                <a href="#contact" class="btn btn-secondary">Order Bulk</a>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1678">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header hidden">
+                <h2>The Farm Ecosystem</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text hidden-left">
+                    <h3>Large Scale, Natural Growth</h3>
+                    <p>Spanning over 50 acres of freshwater ponds, our farm utilizes an integrated ecosystem where
+                        Makhana (Fox Nuts) and Fish thrive together. The large lotus leaves of the Makhana provide shade
+                        for the fish, creating a symbiotic environment that ensures premium quality for both harvests.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-water"></i> Natural Pond Filtration</li>
+                        <li><i class="fas fa-leaf"></i> Organic Makhana Cultivation</li>
+                        <li><i class="fas fa-truck-loading"></i> Bulk Wholesale Capacity</li>
+                    </ul>
+                </div>
+                <div class="about-image hidden-right">
+                    <div class="slider-container">
+                        <button class="slider-btn prev-btn" onclick="slideLeft()">&#10094;</button>
+
+                        <div class="img-box" id="slider">
+                            <img src="Asset/fish-farm_1.jpeg" alt="Fish Farm 1">
+                            <img src="Asset/fish-farm_2.jpeg" alt="Fish Farm 2">
+                            <img src="Asset/fish-farm_3.jpeg" alt="Fish Farm 3">
+                            <img src="Asset/fish-farm_4.jpeg" alt="Fish Farm 4">
+                        </div>
+
+                        <button class="slider-btn next-btn" onclick="slideRight()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header hidden">
+                <h2>Our Harvest</h2>
+                <p>Fresh from the water to the warehouse.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card hidden-up">
+                    <div class="card-icon fish-icon"><i class="fas fa-fish"></i></div>
+                    <h3>Freshwater Fish</h3>
+                    <p>We supply Rohu, Katla, and Mrigal in bulk quantities. Healthy, active fish raised in oxygen-rich
+                        large ponds.</p>
+                </div>
+                <div class="card hidden-up delay-100">
+                    <div class="card-icon makhana-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Premium Makhana</h3>
+                    <p>High-quality Fox Nuts harvested and processed with care. Available in raw and popped forms for
+                        wholesale.</p>
+                </div>
+                <div class="card hidden-up delay-200">
+                    <div class="card-icon seed-icon"><i class="fas fa-hand-holding-water"></i></div>
+                    <h3>Seed Supply</h3>
+                    <p>We also support other farmers by providing high-yield fish spawns and Makhana seedlings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header hidden">
+                <h2>Meet The Partners</h2>
+                <p>The visionaries behind the waters.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member hidden-up">
+                    <div class="member-img">
+                        <img class="jeevan" src="Asset\jeevan.jpeg" alt="">
+                    </div>
+                    <h3>Jeevan Mukhiya</h3>
+                    <span>Operations Head</span>
+                    <p>Expert in pond management and fish health with 15 years of experience.</p>
+                </div>
+                <div class="team-member hidden-up delay-100">
+                    <div class="member-img">
+                        <img src="Asset\janardan ke papa.jpeg" alt="">
+                    </div>
+                    <h3>Shree Raju Mukhiya</h3>
+                    <span>Makhana Specialist</span>
+                    <p>Oversees the cultivation, harvesting, and processing of premium Fox Nuts.</p>
+                </div>
+                <div class="team-member hidden-up delay-200">
+                    <div class="member-img">
+                        <img src="Asset\janardan.jpeg" alt="">
+                    </div>
+                    <h3>janardan Mukhiya</h3>
+                    <span>Sales & Logistics</span>
+                    <p>Ensures that our bulk orders reach markets and vendors on time, fresh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-box hidden">
+                <div class="contact-left">
+                    <h3>Get a Quote</h3>
+                    <form>
+                        <div class="input-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Phone Number" required>
+                        </div>
+                        <input type="email" placeholder="Email Address">
+                        <input type="text" placeholder="Address">
+                        <select>
+                            <option>Interested in Fish Wholesale</option>
+                            <option>Interested in Makhana Bulk</option>
+                            <option>Other Inquiry</option>
+                        </select>
+                        <textarea placeholder="Message" rows="5"></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Itwa Shivnagar P.S-Biraul, Dist. Darbhanga, Bihar</p>
+                    <p><i class="fas fa-phone"></i> +91 7988592613,+91 7070873943</p>
+                    <p><i class="fas fa-envelope"></i>mithilamachhmakhana07udyog@gmail.com</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AquaHarvest Farms. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
