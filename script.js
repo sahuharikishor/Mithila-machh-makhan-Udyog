@@ -77,4 +77,23 @@ function slideLeft() {
         left: -scrollAmount, // Negative value se wapas piche jayega
         behavior: 'smooth'
     });
+
+}
+
+// Form  select 
+const contactForm = document.querySelector('form');
+
+//  when action on Submit button 
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        
+        // 1. stop refres page
+        event.preventDefault();
+        
+        // 2. Simple Alert Box 
+        alert("Thank you! Your message has been sent successfully.");
+        
+        // 3. reset form
+        contactForm.reset();
+    });
 }
