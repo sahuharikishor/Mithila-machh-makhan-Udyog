@@ -44,21 +44,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // 4. Mobile Menu Toggle (Simple implementation)
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+// const hamburger = document.querySelector('.hamburger');
+// const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-    navLinks.style.display = (navLinks.style.display === "flex") ? "none" : "flex";
-    if(navLinks.style.display === "flex") {
-        navLinks.style.flexDirection = "column";
-        navLinks.style.position = "absolute";
-        navLinks.style.top = "70px";
-        navLinks.style.right = "0";
-        navLinks.style.backgroundColor = "white";
-        navLinks.style.width = "100%";
-        navLinks.style.padding = "20px";
-    }
-});
+// hamburger.addEventListener('click', () => {
+//     navLinks.style.display = (navLinks.style.display === "flex") ? "none" : "flex";
+//     if(navLinks.style.display === "flex") {
+//         navLinks.style.flexDirection = "column";
+//         navLinks.style.position = "absolute";
+//         navLinks.style.top = "70px";
+//         navLinks.style.right = "0";
+//         navLinks.style.backgroundColor = "white";
+//         navLinks.style.width = "100%";
+//         navLinks.style.padding = "20px";
+//     }
+// });
 
 const slider = document.getElementById('slider');
 
@@ -96,3 +96,16 @@ if (contactForm) {
         contactForm.reset();
     });
 }
+
+// Select the hamburger icon element from the HTML
+const hamburger = document.querySelector('.hamburger');
+
+// Select the navigation links container (ul)
+const navLinks = document.querySelector('.nav-links');
+
+// Add a click event listener to the hamburger button
+hamburger.addEventListener('click', () => {
+    // Toggle the 'active' class on the nav-links
+    // Logic: If the class exists, remove it. If it doesn't exist, add it.
+    navLinks.classList.toggle('active');
+});

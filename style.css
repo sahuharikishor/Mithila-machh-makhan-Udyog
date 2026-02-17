@@ -460,3 +460,64 @@ footer {
     .about-grid, .contact-box { grid-template-columns: 1fr; }
     .input-row { flex-direction: column; }
 }
+
+/* --- MOBILE MENU  --- */
+@media (max-width: 768px) {
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: #333;
+    }
+
+    /* Pop-up Box Container */
+    .nav-links {
+        display: none; 
+        
+        position: absolute;
+        top: 60px;         
+        right: 20px;        
+        width: 120px;       
+        height: auto;       
+        background-color: white;
+        flex-direction: column;
+        
+        /* Box Styling */
+        gap: 12px;
+        padding: 5px 0;     
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+        border: 1px solid #eee;
+        z-index: 1000;
+    }
+
+    /* Active State */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* List Items */
+    .nav-links li {
+        width: 100%;
+        margin: 0;          
+        list-style: none;
+    }
+
+    /* Links Styling */
+    .nav-links a {
+        display: block;    
+        padding: 2px 4px; 
+        font-size: 14px;    
+        color: #333;
+        text-decoration: none;
+        transition: 0.2s;
+        text-align: left;   
+    }
+
+    /* Hover Effect */
+    .nav-links a:hover {
+        background-color: #f0f8ff; 
+        color: #007bff;            
+    }
+}
