@@ -66,7 +66,7 @@ function slideRight() {
     // Slider ki width pata karein (taki hum 1 puri image aage badh sakein)
     const scrollAmount = slider.clientWidth; 
     slider.scrollBy({
-        left: scrollAmount,
+        left: scrollAmount,  // for next
         behavior: 'smooth'
     });
 }
@@ -74,7 +74,7 @@ function slideRight() {
 function slideLeft() {
     const scrollAmount = slider.clientWidth;
     slider.scrollBy({
-        left: -scrollAmount, // Negative value se wapas piche jayega
+        left: -scrollAmount, // for go back 
         behavior: 'smooth'
     });
 }

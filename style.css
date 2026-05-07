@@ -47,7 +47,7 @@ ul {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
+.b_name {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--dark-blue);
@@ -86,6 +86,7 @@ ul {
 
 .hamburger {
     display: none;
+    align-items: flex-end;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -168,7 +169,7 @@ ul {
 }
 
 .shape-fill {
-    fill: #FFFFFF;
+    fill: #d4f1f9;
 }
 
 /* --- Sections General --- */
@@ -329,29 +330,12 @@ section {
    RESPONSIVE
    ========================= */
 
-/* Tablet */
-@media (max-width: 768px) {
-    .slider-container {
-        height: 320px;
-    }
-
-    .slider-btn {
-        width: 44px;
-        height: 44px;
-        font-size: 20px;
-    }
-
-    .prev-btn {
-        left: -14px;
-    }
-
-    .next-btn {
-        right: -14px;
-    }
-}
 
 /* Mobile */
 @media (max-width: 480px) {
+    .b_name{
+        font-size: 1.5rem;
+    }
     .slider-container {
         height: 250px;
         border-radius: 14px;
@@ -565,8 +549,26 @@ footer {
     transition-delay: 200ms;
 }
 
-/* --- Mobile Responsive --- */
+
 @media (max-width: 768px) {
+    .slider-container {
+        height: 320px;
+    }
+
+    .slider-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    .prev-btn {
+        left: -14px;
+    }
+
+    .next-btn {
+        right: -14px;
+    }
+
     .nav-links {
         display: none;
         /* Add JS to toggle this */
